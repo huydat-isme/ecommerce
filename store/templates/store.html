@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class = 'container'>
+    <div class = 'row'>
+      {% for product in products %}
+        
+        <div class = 'col-md-4 col-lg-4'>
+          <div class="card" style="width: 18rem;">
+              <img src="{{product.image.url}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <hr>
+
+                <a  class="btn btn-primary addtocart" data-action = "add" data-product = "{{product.id}}">Add to Cart</a>
+                <a class="btn btn-outline-success" href="#">View</a>
+                <h4 style="display: inline-block; float: right"><strong>${{product.price}}</strong></h4>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+  
+      
+
+        
+
+       
+
+    </div>
+</div>
+
+
+
+{% endblock content%}
+
