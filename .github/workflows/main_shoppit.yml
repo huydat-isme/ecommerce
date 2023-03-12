@@ -3,6 +3,9 @@
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
 name: Build and deploy Python app to Azure Web App - shoppit
+name: Install dependencies
+
+run: pip install -r requirements.txt
 
 on:
   push:
@@ -61,3 +64,4 @@ jobs:
           app-name: 'shoppit'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20E9E4E2CF93408087C58399B409C42C }}
+     
