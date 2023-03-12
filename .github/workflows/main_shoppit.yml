@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'shoppit'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BD206175518B40758FFEFEEF86866C14 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_20E9E4E2CF93408087C58399B409C42C }}
